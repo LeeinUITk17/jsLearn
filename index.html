@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+           // document.write("kimochi")
+            console.log("kimochi")
+            var age=18;
+            var age2=age;
+            //datatype int,string,float,bool
+            var name='eimi fukada';
+            var con_zin=true;
+            //null like null in c++
+            //datatype like datatype in c++
+            //document.write('\r\n'+name);
+            //name=window.prompt("nhap ten idol ae yeu thich");
+            //document.write('\r\ni love '+ name);
+            //process <xu ly>..
+           //operator js like c++
+           //operators were set up <js>
+             age=parseInt(window.prompt("nhap tuoi ny cua ae nao!!!")) ;
+             document.write("Năm nay ny của ae là "+ age+" tuổi.<br>");
+            if(age<20){
+               for(var i=0;i<(20-age);i++){
+                 document.write("\tChờ đợi đi ae ạ.<br>");
+               }
+            }else{
+                for(var i=0;i<(age-20);i++){
+                    document.write("\tHúp lẹ ae ơi!!.<br>");
+                }
+            }
+            //object
+            var neighbor ={
+                ten: "lan",
+                tuoi: 18,
+                hon_nhan:"doc than",
+                dia_chi:{
+                    quan:"cau giay",
+                    phuong:"mai dich"
+                }
+            }
+            document.write(neighbor.dia_chi.quan)
+            //function
+            var tinh_tuoi=function(nam_sinh){
+ //var birth=parseInt(window.prompt("nhập năm sinh của ae vào nào!!"));
+      //      var noi_banh_chung=2023-birth;
+      var noi_banh_chung=2023-nam_sinh;
+            document.write("<br>năm nay người ae của chúng ta "+noi_banh_chung+" tuổi<br>");
+            return noi_banh_chung;
+            }
+            var tuoi1=tinh_tuoi(2004);
+            var tuoi2=tinh_tuoi(1997);
+            //parameter  function(parameter)
+        document.write("<br>Năm nay tôi "+tuoi1+" tuổi và anh trai của tôi "+tuoi2+ " tuổi<br>");
+        //array
+        var a=["lan","thao","hien","phuong","ngoc"];
+        a.push("nhung");//them phan tu vao cuoi mang
+        a.pop();//xoa phan tu cuoi mang
+        //array js co the chua nhieu kieu datatype vd: arr[1,'al',2123]...
+        for(var i=0;i<a.length;i++){
+            document.write(a[i]+" ");
+        }
+        //string
+        var idol="eimi fukada";
+        document.write("<br>"+idol);
+        document.write("<br>");
+        for(var i=0;i<idol.length;i++){
+            document.write(idol[i]+"_");
+        }
+        </script>
+    </body>
+</html>
