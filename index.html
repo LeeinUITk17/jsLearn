@@ -4,6 +4,15 @@
 
     </head>
     <body>
+        <!-- eventy handler html element 
+        ex.
+        event: click
+       event handler == onlick
+        -->
+        <p>Nhập tên:<input id="input0x34" value></p>
+        <button onclick="helloMode()">OK</button>
+        <br>
+        <div id="hello0x34"></div>
         <script>
            // document.write("kimochi")
             console.log("kimochi")
@@ -63,12 +72,28 @@
             document.write(a[i]+" ");
         }
         //string
+        //type coercion cơ chế tự động chuyển đổi kiểu dữ kiệu
         var idol="eimi fukada";
         document.write("<br>"+idol);
         document.write("<br>");
         for(var i=0;i<idol.length;i++){
             document.write(idol[i]+"_");
         }
+        //DOM <document object model> help code run lke application software
+var helloMode=function(){
+var valueInput=document.getElementById("input0x34").value;
+var hello="chào "+valueInput+" nhé!!";
+document.getElementById("hello0x34").innerHTML=hello;
+}
+//Asynchronous
+var thong_bao=function(){
+document.getElementById("hello0x34").innerHTML="hết giờ";
+}
+setTimeout(thong_bao,3000);
+//data storage
+// localStorage.ten="Tai Lee Coder";
+// localStorage.dia_chi="TP HCM";
+
         </script>
     </body>
 </html>

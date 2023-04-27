@@ -1,0 +1,12 @@
+>>event HTML
+>>DOM js
+>>Asynchoronous
+>>Multi-thread
+>>module
+>>V8 engine
+>>callback
+>>data storage
+<cookie>,<web storage>,<database>...
+>>IndexedDB (HTML5)
+>>NoSQL Database
+>>Local storage <save data in browser>
